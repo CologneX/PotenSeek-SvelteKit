@@ -11,7 +11,7 @@
 	import Carousel from 'svelte-carousel';
 	import { browser } from '$app/environment';
 
-	let carousel; // for calling methods of the carousel instance
+	let carousel: any; // for calling methods of the carousel instance
 
 	const handleNextClick = () => {
 		carousel.goToNext();
@@ -83,7 +83,7 @@
 		daftar sekarang!
 	</span>
 
-	<div class="border-2 border-gray-500 card p-10">
+	<div class="border-2 border-gray-500 card p-10" id="preregister">
 		<form action="POST" class="grid gap-y-4">
 			<label class="label">
 				<span class="font-bold text-lg">Nama Lengkap</span>
